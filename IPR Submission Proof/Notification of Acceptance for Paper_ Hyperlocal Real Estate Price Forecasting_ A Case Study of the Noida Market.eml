@@ -1,0 +1,186 @@
+Delivered-To: kavya500.be22@chitkara.edu.in
+Received: by 2002:a05:7108:5e84:b0:55f:cadc:552a with SMTP id ev4csp885491gdb;
+        Tue, 28 Apr 2026 21:38:00 -0700 (PDT)
+X-Received: by 2002:a17:903:1b68:b0:2b0:6068:4c5f with SMTP id d9443c01a7336-2b9881d16e4mr15819495ad.8.1777437480637;
+        Tue, 28 Apr 2026 21:38:00 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1777437480; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ZjFtIJIZNzN48yanGmso36+1cVccRgIbqXf0sE0IBz3hlYHcyVy3K19PxEiIxnfhxH
+         nB81TuMB7hrkcc3d2e8qRFlgGMlIYCNf5RGL/hveSqXexS/Z9w7halmG+16QSwtHypDd
+         0MlW8H0rlys04qIHh1cvfD7YcmlFnR4cC4emiWIuMOLc0T4rbzG5jSe0dIc+yFDIkrQa
+         eyWvKXzS1VcVhdA4MxO8140ef2zLSDs5ZQc3R307/u6tK+QW0NYxF77Nj+/HWyTN2d4w
+         UA8jpgHvvecr70/2kc0OYg8d9lVIoVfLtlhIkieeVd8hsyoeoX6worO0eykk6D0uXTjg
+         XyVQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :from:to:date:dkim-signature;
+        bh=MFTx3VQSu6sFSVeQIxLpE//wyLzI+xCZp0glRSUwsY8=;
+        fh=Hw6LfrzakXCh+0h5OixIgAmgn697Egqss9X6S6addEk=;
+        b=WUSbNsWuK/vMnrTD4t3KdkMGGU+29SHfKHLInyZ6FjGErCohMN3/WprrpWpxZnIp9z
+         CsQrrI5y8AHm+QB6XGUMO3adyt+6dCDoC7GZ4jDP0gSwF5QkdaT7LbS4ZOmbWxcLpxb9
+         b1/+JjXJ4r5/ZCagZnTMYdJEZL6adNCxLQj2DFkpXb5ZKBdI9o2gmf13ptMZDbhAfeRi
+         W8O6G2uoVYi0NidfvWUOx1RBcn4Gpew0xFYBgCG5V0lQb2MpJcn9L3MF1dhZM4PfHylL
+         ltBO+6wgy85qaXep11I786Tk2E9XhivicTR0U5p74i1V8XhTXZViQ66kJwjr3polrq3f
+         z95Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=bY4hacbh;
+       spf=pass (google.com: domain of ijsret.com@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ijsret.com@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=neutral header.i=@chitkara.edu.in
+Return-Path: <ijsret.com@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d9443c01a7336-2b9879c07b6sor2526835ad.6.2026.04.28.21.38.00
+        for <kavya500.be22@chitkara.edu.in>
+        (Google Transport Security);
+        Tue, 28 Apr 2026 21:38:00 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ijsret.com@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=bY4hacbh;
+       spf=pass (google.com: domain of ijsret.com@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ijsret.com@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=neutral header.i=@chitkara.edu.in
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1777437480; x=1778042280; darn=chitkara.edu.in;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :from:to:date:from:to:cc:subject:date:message-id:reply-to;
+        bh=MFTx3VQSu6sFSVeQIxLpE//wyLzI+xCZp0glRSUwsY8=;
+        b=bY4hacbhYn2BRlxpyzcqsBZcofUOeJPnI651YA3usrfF+GnVLxED/0SUibs0oV91Uh
+         bp9YV75uX9ytnDKq9jypFQVUvgZGBDp03J94vUhLaJ8JJ4auwZ/GJK4GhiDqm/70P56w
+         ZIgxoRDxwRAaPb/Nt5c7jGwzadt/iwDeudQarVaiPbGEaxPr2G9GOWHpNCVRCZGcaUWC
+         D/5j4QlmLiug66jEH1VClmM65EDKP7SUu6Q+u3s7RnY0r+ycsS0RFjHlhHlVSC//cMSx
+         RVPcfipfDkB/NvEnBr1D1HM2uvh0qqeoPeUDri/JBnee5L3Ru7vSl0LzuufAY96u/gZE
+         m0sw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1777437480; x=1778042280;
+        h=content-transfer-encoding:mime-version:message-id:subject:reply-to
+         :from:to:date:x-gm-gg:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=MFTx3VQSu6sFSVeQIxLpE//wyLzI+xCZp0glRSUwsY8=;
+        b=ms6j4lcBpu12FSOvZeskguZO2p2kEFmrUVT5gzfEP3ZlGp2xlsY1PHT8b1Pl38NeHA
+         zWpiddASbsoKsonVXRCCIMN1fMTNo9erZFFXQdGM1YNOiXoQw6ERmzoFYshyWb/0yz9+
+         oTawTaKFG0bjTfL8cmiN9jFTeyjD0AV2wqzkBTiEF+FGzejVdHokgaoQFYVDsN+QtkF+
+         RsbKCQw5kEqj9HF0NMxP6z5Y050HVqBDzrSFSPswD821vZuJD0uJ125WBKT5bf+BXtYg
+         Qm0VDWIHTghWf9gWAiJArvKUuv2eoljt7e/R1sH875FauCJ7aXveieT+BZecsxuHp2kg
+         LV9g==
+X-Gm-Message-State: AOJu0Yydot12vi1IkuryMYMs5871PkaowkhYU04HQ21/0kiCrhwy17GN
+	oPZY4OnB2es1Nj7WXVcqdNpP7pV3V5i9RsS8FXvhaTskLxYOBw5Fm4x6PqUVj7SV
+X-Gm-Gg: AeBDievFu0kWauE79TeRe0e9MN6XqRpz5oqG6LBeVmXgToZ1FxbA6he+QxNhLwZE1el
+	zKeSxOi/UOUUBSQgw2Nlz60BCDLei6fWPE9oKgth29ZyWv56tvyZUNx4kA8dScFdXpdGPZw17yV
+	/aLgZCOeBo9SRnGb7+jz5vXEuHywIYhYeN7sUbTg4lEnu19rlwtZmDtF4MnkqblxRzo1UDVWFDS
+	2mKNCMY6YhCuR1wyD6EOB8STQLtaYY8MPm847w1VRl3Tvtm/+2GxZzGhWNDxujIgWDDsA3rBDxR
+	58l4RTwEp2pTL4ujNbEF+ysjfTh2IMjzIfURduuzKDbIdjOFmHCegWf6S9qvj3I3yfoUs9ZHwWs
+	DVNNhGs1Jblw1gpafv4Yae3LhyBv2GAdfmD0zdkkoqcOTvGXy/6yshVzAY7pv7LQO/Fqo2KQceH
+	SF0JHvZbYOBgiw0+L0XPr1N2iBAElxx+QZZzlWqbMxpdOShgqkZkTOAEAsrOAwLV9J+H7Yow==
+X-Received: by 2002:a17:903:4b50:b0:2ae:4d6b:b2c7 with SMTP id d9443c01a7336-2b9883fb4cemr12885945ad.9.1777437479881;
+        Tue, 28 Apr 2026 21:37:59 -0700 (PDT)
+Return-Path: <ijsret.com@gmail.com>
+Received: from dengsolutions.com (s3604.bom1.stableserver.net. [190.92.174.102])
+        by smtp.gmail.com with ESMTPSA id d9443c01a7336-2b9887731dcsm7688755ad.14.2026.04.28.21.37.58
+        for <kavya500.be22@chitkara.edu.in>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 28 Apr 2026 21:37:59 -0700 (PDT)
+Date: Wed, 29 Apr 2026 04:37:56 +0000
+To: Kavya Sharma <kavya500.be22@chitkara.edu.in>
+From: International Journal of Scientific Research & Engineering Trends <ijsret.com@gmail.com>
+Reply-To: International Journal of Scientific Research & Engineering Trends <ijsret.com@gmail.com>
+Subject: Notification of Acceptance for Paper: Hyperlocal Real Estate Price Forecasting: A Case Study of the Noida Market
+Message-ID: <640abccb54d9ddb039a45689dd3f3357@gmail.com>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+X-Mailer: PHP/7.4.33
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="b1=_dXuWv0fuxwcYOFPoDbGyRecBHkkTV2cpbyVKnwU3xyY"
+Content-Transfer-Encoding: 8bit
+
+--b1=_dXuWv0fuxwcYOFPoDbGyRecBHkkTV2cpbyVKnwU3xyY
+Content-Type: text/plain; charset=us-ascii
+
+
+International Journal of Scientific Research and Engineering Trends 
+
+ISSN (Online): 2395-566X
+
+www.ijsret.com
+
+NOTIFICATION OF ACCEPTANCE
+
+
+
+Dear Kavya Sharma,
+
+Paper-Id: IJSRET_V12I2_33154
+
+The review process for International Journal of Scientific Research and Engineering Trends (IJSRET) has been completed. Based on the recommendations of the reviewers and the Technical Committee, we are pleased to inform you that your paper identified above has been accepted for online publication. Paper formatting&nbsp;will be done by&nbsp;journal internal team. You are requested to complete the formalities. This notification email serves as our formal acceptance of your paper as well as consideration for online the publication provided for completion of formalities. (IMPORTANT) SO IN ORDER TO PUBLISH YOUR PAPER SUCCESSFULLY, YOU MUST FINISH FOLLOWING STEPS.
+
+&nbsp;
+
+
+	Mail completely filled Copy_Right_Form (Download Form)&nbsp;at ijsret.com@gmail.com
+	Finish the payment Rs. 1000/-  publication at  Pay_Now&nbsp;https://abcdindex.com/payment.php?pap_id=3215938&amp;atp=97000&nbsp;scan the payment slip and mail it to  ijsret.com@gmail.com
+	To Get paper DOI pay Rs. 200/-  more. (It&#39;s optional and depends on authors).
+
+
+If the above requirements are met by&nbsp; 02/05/2026 the paper will be published in the IJSRET upcoming volume
+
+Finally, we would like to further extend our congratulations to you.
+
+--
+
+--
+
+With Regards
+
+Editor-in-Chief
+
+IJSRET
+
+www.ijsret.com
+
+--b1=_dXuWv0fuxwcYOFPoDbGyRecBHkkTV2cpbyVKnwU3xyY
+Content-Type: text/html; charset=us-ascii
+
+<div style="color:#002060; font-family:Arial,sans-serif; text-align:center">
+<h2><span style="color:#002060 !important">International Journal of Scientific Research and Engineering Trends </span></h2>
+
+<p><span style="color:red">ISSN (Online): 2395-566X</span></p>
+
+<p><a href="https://www.ijsret.com" style="color: blue; text-decoration: underline;">www.ijsret.com</a></p>
+
+<h3>NOTIFICATION OF ACCEPTANCE</h3>
+
+<hr /></div>
+
+<p><strong><span style="color:#500050">Dear Kavya Sharma,</span></strong></p>
+
+<p><span style="font-size:26px"><span style="color:#500050"><strong>Paper-Id:</strong> <strong>IJSRET_V12I2_</strong></span><strong><span style="color:#500050">33154</span></strong></span></p>
+
+<p>The review process for International Journal of Scientific Research and Engineering Trends (IJSRET) has been completed. Based on the recommendations of the reviewers and the Technical Committee, we are pleased to inform you that your paper identified above has been accepted for online publication. <strong>Paper formatting&nbsp;will be done by&nbsp;journal internal team.</strong> You are requested to complete the formalities. This notification email serves as our formal acceptance of your paper as well as consideration for online the publication provided for completion of formalities. (IMPORTANT) SO IN ORDER TO PUBLISH YOUR PAPER SUCCESSFULLY, YOU MUST FINISH FOLLOWING STEPS.</p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li><span style="color:#500050">Mail completely filled <strong>Copy_Right_Form </strong></span>(<a href="https://ijsret.com/wp-content/uploads/2025/03/IJSRET_Copyright_Transfer_Form.doc">Download Form</a>)<span style="color:#500050">&nbsp;at</span> <a href="mailto:ijsret.com@gmail.com" style="color: blue;">ijsret.com@gmail.com</a></li>
+	<li><span style="color:#500050">Finish the payment </span><strong><span style="font-size:28px"><span style="color:red">Rs. 1000/-</span></span></strong> <span style="color:#500050"> publication at </span> <span style="font-size:20px"><strong><a href="https://abcdindex.com/payment.php?pap_id=3215938&amp;atp=97000" style="color: blue;">Pay_Now</a>&nbsp;</strong></span><span style="color:#500050">https://abcdindex.com/payment.php?pap_id=3215938&amp;atp=97000&nbsp;scan the payment slip and mail it to </span> <a href="mailto:ijsret.com@gmail.com" style="color: blue;">ijsret.com@gmail.com</a></li>
+	<li><span style="color:#500050">To Get paper DOI pay<strong><span style="font-size:36px"> </span></strong></span><strong><span style="font-size:36px"><span style="color:red">Rs. 200/-</span> </span></strong><span style="color:#500050"><strong><span style="font-size:36px"> </span></strong>more. (It&#39;s optional and depends on authors).</span></li>
+</ol>
+
+<p>If the above requirements are met by&nbsp;<strong><span style="font-size:36px"> <span style="color:red">02/05/2026</span></span></strong> the paper will be published in the IJSRET upcoming volume</p>
+
+<p>Finally, we would like to further extend our congratulations to you.</p>
+
+<p>--</p>
+
+<p>--</p>
+
+<p><span style="color:#9d1811"><strong>With Regards</strong></span></p>
+
+<p><span style="color:#9d1811"><strong>Editor-in-Chief</strong></span></p>
+
+<p><strong><span style="font-size:28px">IJSRET</span></strong></p>
+
+<p><a href="https://www.ijsret.com" style="color: blue;">www.ijsret.com</a></p>
+
+
+--b1=_dXuWv0fuxwcYOFPoDbGyRecBHkkTV2cpbyVKnwU3xyY--
+
