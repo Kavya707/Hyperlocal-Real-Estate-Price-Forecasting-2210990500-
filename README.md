@@ -6,4 +6,4 @@
 
 **Team Details:** Kavya Sharma (2210990500). Supervised by Dr. Gurpreet Singh (Associate Professor, Chitkara University)
 
-**Current Status:** Completed & Submitted
+**Current Status:** published
